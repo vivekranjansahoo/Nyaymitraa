@@ -51,6 +51,8 @@ module.exports.lspregister = async (req, res, next) => {
         .json({ message: "Legal Service Provider already exists" });
     }
 
+    //register
+
     const newUser = new Lsp({
       firstname,
       lastname,
