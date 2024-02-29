@@ -50,6 +50,8 @@ export default function LspRegister() {
   const [role, setrole] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setconfirmPassword] = useState("");
+  const [idProof, setIdProof] = useState("");
+  const [licenseProof, setLicenseProof] = useState("");
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [pin, setPin] = useState("");
   const [otp, setOtp] = useState("");
@@ -207,8 +209,7 @@ export default function LspRegister() {
               size="sm"
               style={{
                 backgroundColor: isVerified ? "green" : "#4e0eff",
-              }}
-            >
+              }}>
               {isLoading ? (
                 <Spinner size="sm" />
               ) : isVerified ? (
@@ -229,16 +230,14 @@ export default function LspRegister() {
                   <Heading
                     lineHeight={1.1}
                     fontSize={{ base: "2xl", md: "3xl" }}
-                    mt={2}
-                  >
+                    mt={2}>
                     Verify your Email
                   </Heading>
                 </Center>
                 <Center
                   fontSize={{ base: "sm", sm: "md" }}
                   color={useColorModeValue("gray.800", "gray.400")}
-                  mt={3}
-                >
+                  mt={3}>
                   We have sent code to your email & expire in 5 minutes.
                 </Center>
                 <Center
@@ -246,8 +245,7 @@ export default function LspRegister() {
                   fontWeight="bold"
                   color={useColorModeValue("gray.800", "gray.400")}
                   mt={3}
-                  mb={6}
-                >
+                  mb={6}>
                   {email}
                 </Center>
                 <FormControl>
@@ -317,8 +315,7 @@ export default function LspRegister() {
             style={{
               color: "white",
               border: "0.1rem solid #4e0eff",
-            }}
-          >
+            }}>
             <option value="Advocate" style={{ color: "black" }}>
               Advocate
             </option>
@@ -342,6 +339,25 @@ export default function LspRegister() {
             placeholder="Phone Number"
             name="Phone Number"
             onChange={(e) => setphoneno(e.target.value)}
+            maxLength={10}
+            minLength={10}
+          />
+          <p style={{ color: "white" }}>ID Proof</p>
+          <input
+            type="number"
+            placeholder="Adhaar Number (ID Proof)"
+            name="id proof"
+            onChange={(e) => setIdProof(e.target.value)}
+            maxLength={14}
+            minLength={14}
+          />
+
+          <p style={{ color: "white" }}>License Number</p>
+          <input
+            type="text"
+            placeholder="License Number"
+            name="license Number"
+            onChange={(e) => setLicenseProof(e.target.value)}
           />
 
           <p style={{ color: "white" }}>Document Proof</p>

@@ -38,14 +38,14 @@
 
 .box {
   position: absolute;
-  width: 300px;
-  height: 300px;
+  width: 260px;
+  height: 260px;
   /* border: 2px solid #262626; */
 }
 
 #box-front {
   transform: translateX(-130px) translateY(-130px) translateZ(130px);
-  background-image: url("../../assets/img/1.jpg");
+  background-image: url("../../assets/img/4.jpg");
   background-size: cover;
   background-position: center;
   object-fit: contain;
@@ -54,7 +54,7 @@
 
 #box-back {
   transform: translateX(-130px) translateY(-130px) translateZ(-130px);
-  background-image: url("../../assets/img/1.jpg");
+  background-image: url("../../assets/img/2.jpg");
   background-size: cover;
   background-position: center;
   /* filter: grayscale(100%); */
@@ -62,7 +62,7 @@
 
 #box-right {
   transform: translateY(-130px) rotateY(90deg);
-  background-image: url("../../assets/img/1.jpg");
+  background-image: url("../../assets/img/3.jpg");
   background-size: cover;
   background-position: center;
   /* filter: grayscale(100%); */
@@ -70,7 +70,7 @@
 
 #box-left {
   transform: translateY(-130px) translateX(-260px) rotateY(90deg);
-  background-image: url("../../assets/img/1.jpg");
+  background-image: url("../../assets/img/2.jpg");
   background-size: cover;
   background-position: center;
   /* filter: grayscale(100%); */
@@ -78,7 +78,7 @@
 
 #box-top {
   transform: translateX(-130px) translateY(-260px) rotateX(90deg);
-  background-image: url("../../assets/img/1.jpg");
+  background-image: url("../../assets/img/3.jpg");
   background-size: cover;
   background-position: center;
   /* filter: grayscale(100%); */
@@ -86,7 +86,7 @@
 
 #box-bottom {
   transform: translateX(-130px) rotateX(90deg);
-  background-image: url("../../assets/img/1.jpg");
+  background-image: url("../../assets/img/4.jpg");
   background-size: cover;
   background-position: center;
   /* filter: grayscale(100%); */
