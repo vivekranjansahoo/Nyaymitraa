@@ -168,9 +168,7 @@ const VerificationPage_Info = () => {
                   <Tr
                     key={provider.id}
                     cursor="pointer"
-
                     onClick={() => handleRowClick(provider)}>
-                   
                     <Td>
                       {provider.firstname}
 
@@ -202,10 +200,8 @@ const VerificationPage_Info = () => {
                         </Button> */}
                         <Button
                           colorScheme="green"
-                          size="s
-                          onClick={() => handleAccept(provider.id)}
-                          onClick={() => handleAccept(provider._id)}
-                       >
+                          size="s"
+                          onClick={() => handleAccept(provider._id)}>
                           Accept
                         </Button>
                         <Button
