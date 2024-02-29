@@ -47,3 +47,5 @@ export const setAvatarRoute = `${host}/auth/setavatar`;
 export const booking = `${host}/book/appointment`;
 export const bookdetails = `${host}/book/details`;
 export const allbookingdetails = `${host}/book/alldetails`;
+
+//testing
