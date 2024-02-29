@@ -79,7 +79,7 @@ const UserWelcome = () => {
         <img src={Robot} alt="" />
         <h1>
           Welcome,{" "}
-          <span>
+          <span className="color-red">
             Hi {user.firstname} <span> </span> {user.lastname} & Email :{" "}
             {user.email}
           </span>
@@ -87,9 +87,9 @@ const UserWelcome = () => {
         {/* 
         <Button onClick={onOpen}>Trigger modal</Button> */}
 
-        <Modal onClose={onClose} isOpen={isOpen} isCentered size="xl">
+        <Modal onClose={onClose} isOpen={isOpen} isCentered size="2xl">
           <ModalOverlay />
-          <ModalContent backgroundColor="#4e0eff">
+          <ModalContent backgroundColor="purple.700">
             <ModalHeader textAlign="center" color="white">
               Find the Legal Service Provider{" "}
             </ModalHeader>
@@ -101,23 +101,34 @@ const UserWelcome = () => {
                     backgroundColor="cyan"
                     borderRadius="lg"
                     overflow="hidden"
-                    _hover={{ bgGradient: "linear(to-r, #FFD700, #FF8C00)" }}
                     width="300px" // Adjust the width as needed
-                    height="400px"
-                  >
+                    height="400px">
                     <Image
                       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAZpl1RUV7fHakOoKawPThDQeazIZLNf9bkA&usqp=CAU"
                       alt="Image 1"
                       borderRadius="lg"
                       style={{ marginLeft: "40px" }}
+                      mt={4}
                     />
-                    <Text mt={2} style={{ color: "black" }}>
-                      Discover legal excellence with Legal Service Provider. Our
-                      seasoned team delivers tailored solutions and unwavering
-                      support, navigating complexities to safeguard your rights.
+                    <Text
+                      mt={2}
+                      style={{ color: "black" }}
+                      p={4}
+                      textAlign={"center"}
+                      fontWeight={"700"}>
+                      Already Know About Your Legal Requirements .
                     </Text>
                     <Link to="/choice">
-                      <Button style={{ marginLeft: "90px" }}>Click here</Button>
+                      <Button
+                        style={{ marginLeft: "90px" }}
+                        variant={"solid"}
+                        bg={"black"}
+                        _hover={{
+                          bgGradient: "linear(to-r, #FFD700, #FF8C00)",
+                          color: "black",
+                        }}>
+                        CLICK HERE
+                      </Button>
                     </Link>
                   </Box>
 
@@ -125,24 +136,35 @@ const UserWelcome = () => {
                     backgroundColor="cyan"
                     borderRadius="lg"
                     overflow="hidden"
-                    _hover={{ bgGradient: "linear(to-r, #FFD700, #FF8C00)" }}
                     width="300px" // Adjust the width as needed
-                    height="400px"
-                  >
+                    height="400px">
                     <Image
                       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAZpl1RUV7fHakOoKawPThDQeazIZLNf9bkA&usqp=CAU"
                       alt="Image 2"
                       borderRadius="lg"
                       style={{ marginLeft: "40px" }}
+                      mt={4}
                     />
-                    <Text mt={2} style={{ color: "black" }}>
-                      Dont't Know about whom to go our ml model will help you
-                      for finding the best legal service providers Trust us to
-                      be your dedicated legal partner, ensuring clarity and
-                      protection in every circumstance.
+                    <Text
+                      mt={2}
+                      style={{ color: "black" }}
+                      p={4}
+                      textAlign={"center"}
+                      fontWeight={"700"}>
+                      Dont't Know about Your Legal requirement . ASK our ML
+                      Model
                     </Text>
                     <Link to="/unknownchoice">
-                      <Button style={{ marginLeft: "90px" }}>Click here</Button>
+                      <Button
+                        style={{ marginLeft: "90px" }}
+                        variant={"solid"}
+                        bg={"black"}
+                        _hover={{
+                          bgGradient: "linear(to-r, #FFD700, #FF8C00)",
+                          color: "black",
+                        }}>
+                        CLICK HERE
+                      </Button>
                     </Link>
                   </Box>
                 </HStack>

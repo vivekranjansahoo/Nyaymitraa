@@ -23,7 +23,7 @@ const Navbar = () => {
             </h1>
           </Link>
         </div>
-        <nav className="hidden lg:flex flex-row items-center gap-6">
+        <nav className="hidden lg:flex flex-row items-center gap-6 font-bold">
           <Link
             to="/"
             spy={true}
