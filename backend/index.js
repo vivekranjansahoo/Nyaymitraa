@@ -128,15 +128,15 @@ app.post("/upload", upload.single("file"), async (req, res) => {
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "vivekranjansahoo81@gmail.com",
-    pass: "xqpvlizmgfppoaww",
+    user: "org.nyaymitra@gmail.com",
+    pass: "cehypwdkbgsvpwob",
   },
 });
 
 // Function to send OTP via email
 const sendOTP = async (email, otp) => {
   const mailOptions = {
-    from: "vivekranjansahoo81@gmail.com",
+    from: "org.nyaymitra@gmail.com",
     to: email,
     subject: "OTP Verification",
     text: `Your OTP for email verification is: ${otp}`,
