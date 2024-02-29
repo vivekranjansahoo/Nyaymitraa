@@ -96,10 +96,6 @@ const VerificationPage_Info = () => {
     console.log(id);
     const responses = await axios.post(`${isverified}/${id}`);
 
-    if (responses.data.message == "lsp approved successfully") {
-      setlspdata("Approved");
-    }
-
     console.log(responses.data.message);
     console.log("Accepting legal service provider with ID:", id);
   };
@@ -168,7 +164,8 @@ const VerificationPage_Info = () => {
                   <Tr
                     key={provider.id}
                     cursor="pointer"
-                    onClick={() => handleRowClick(provider)}>
+                    onClick={() => handleRowClick(provider)}
+                  >
                     <Td>
                       {provider.firstname}
 
@@ -178,6 +175,7 @@ const VerificationPage_Info = () => {
                     <Td>{provider.email}</Td>
                     <Td>{provider.phoneno}</Td>
                     <Td>1</Td>
+                    <Td>100</Td>
                     <Td>
                       {provider.isverified == "0" ? (
                         <p className="p-3 text-xs font-bold uppercase tracking-wider text-black-300 bg-red-600 rounded-lg bg-opacity-50">
@@ -189,7 +187,7 @@ const VerificationPage_Info = () => {
                         </p>
                       )}
                     </Td>
-                    <Th>{lspdata}</Th>
+
                     <Td>
                       <HStack spacing="2">
                         {/* <Button
@@ -200,14 +198,16 @@ const VerificationPage_Info = () => {
                         </Button> */}
                         <Button
                           colorScheme="green"
-                          size="s"
-                          onClick={() => handleAccept(provider._id)}>
+                          size="sm"
+                          onClick={() => handleAccept(provider._id)}
+                        >
                           Accept
                         </Button>
                         <Button
                           colorScheme="red"
                           size="sm"
-                          onClick={() => handleReject(provider.id)}>
+                          onClick={() => handleReject(provider.id)}
+                        >
                           Reject
                         </Button>
                       </HStack>

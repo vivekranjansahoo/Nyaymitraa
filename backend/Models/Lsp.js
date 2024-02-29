@@ -9,6 +9,8 @@ const lspSchema = new mongoose.Schema(
     password: String,
     phoneno: String,
     fileid: String,
+    idno: String,
+    licenseno: String,
     isverified: {
       type: Boolean,
       default: false,
