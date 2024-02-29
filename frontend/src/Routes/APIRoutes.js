@@ -48,4 +48,7 @@ export const booking = `${host}/book/appointment`;
 export const bookdetails = `${host}/book/details`;
 export const allbookingdetails = `${host}/book/alldetails`;
 
-//testing
+//admin approved
+
+export const alllspde = `${host}/auth/adminlsp`;
+export const isverified = `${host}/auth/adminlspapproved`;
