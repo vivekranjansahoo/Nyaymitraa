@@ -57,8 +57,8 @@ const AgentNavbar = () => {
       <div className=" flex flex-row justify-between p-5 md:px-32 px-5 bg-darkBackground text-white">
         <div className=" flex items-center">
           <Link to="/" spy={true} smooth={true} duration={500}>
-            <h1 className=" font-semibold text-4xl cursor-pointer">
-              NyayMitra
+            <h1 className=" font-semibold text-4xl cursor-pointer font-mono">
+              NYAYMITRA
             </h1>
           </Link>
         </div>
@@ -68,8 +68,7 @@ const AgentNavbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className=" hover:text-brightColor transition-all cursor-pointer"
-          >
+            className=" hover:text-brightColor transition-all cursor-pointer">
             Home
           </Link>
           <Link
@@ -77,8 +76,7 @@ const AgentNavbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className=" hover:text-brightColor transition-all cursor-pointer"
-          >
+            className=" hover:text-brightColor transition-all cursor-pointer">
             Features
           </Link>
           <Link
@@ -86,8 +84,7 @@ const AgentNavbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className=" hover:text-brightColor transition-all cursor-pointer"
-          >
+            className=" hover:text-brightColor transition-all cursor-pointer">
             Status
           </Link>
           <Link
@@ -95,8 +92,7 @@ const AgentNavbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className=" hover:text-brightColor transition-all cursor-pointer"
-          >
+            className=" hover:text-brightColor transition-all cursor-pointer">
             About
           </Link>
           <Link
@@ -104,8 +100,7 @@ const AgentNavbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className=" hover:text-brightColor transition-all cursor-pointer"
-          >
+            className=" hover:text-brightColor transition-all cursor-pointer">
             Contact
           </Link>
         </nav>
@@ -130,8 +125,7 @@ const AgentNavbar = () => {
               <Box
                 position="relative"
                 // Set your dark background color here
-                _hover={{ bgGradient: "linear(to-r, #FFD700, #FF8C00)" }}
-              >
+                _hover={{ bgGradient: "linear(to-r, #FFD700, #FF8C00)" }}>
                 <BellIcon
                   boxSize={8}
                   color="red"
@@ -144,8 +138,7 @@ const AgentNavbar = () => {
                     right="0"
                     colorScheme="red"
                     borderRadius="full"
-                    _hover={{ bgGradient: "linear(to-r, #FFD700, #FF8C00)" }}
-                  >
+                    _hover={{ bgGradient: "linear(to-r, #FFD700, #FF8C00)" }}>
                     {notificationCount}
                   </Badge>
                 )}
@@ -163,8 +156,7 @@ const AgentNavbar = () => {
                       transform="translate(-50%, -50%)"
                       zIndex="999"
                       overflowY="auto"
-                      maxHeight="40vh"
-                    >
+                      maxHeight="40vh">
                       <h1>
                         All Messages Here
                         <p
@@ -173,8 +165,7 @@ const AgentNavbar = () => {
                             color: "blue",
                           }}
                           cursor="pointer"
-                          onClick={handleCloseMessage}
-                        >
+                          onClick={handleCloseMessage}>
                           Close
                         </p>
                       </h1>
@@ -224,23 +215,20 @@ const AgentNavbar = () => {
 
         <div
           className=" lg:hidden flex items-center p-2"
-          onClick={handleChange}
-        >
+          onClick={handleChange}>
           <AiOutlineMenu size={25} />
         </div>
       </div>
       <div
         className={` ${
           menu ? "translate-x-0" : "-translate-x-full"
-        } lg:hidden flex flex-col absolute bg-darkBackground text-white left-0 top-20 font-semibold text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}
-      >
+        } lg:hidden flex flex-col absolute bg-darkBackground text-white left-0 top-20 font-semibold text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}>
         <Link
           to="/"
           spy={true}
           smooth={true}
           duration={500}
-          className=" hover:text-brightColor transition-all cursor-pointer"
-        >
+          className=" hover:text-brightColor transition-all cursor-pointer">
           Home
         </Link>
         <Link
@@ -248,8 +236,7 @@ const AgentNavbar = () => {
           spy={true}
           smooth={true}
           duration={500}
-          className=" hover:text-brightColor transition-all cursor-pointer"
-        >
+          className=" hover:text-brightColor transition-all cursor-pointer">
           Service
         </Link>
         <Link
@@ -257,8 +244,7 @@ const AgentNavbar = () => {
           spy={true}
           smooth={true}
           duration={500}
-          className=" hover:text-brightColor transition-all cursor-pointer"
-        >
+          className=" hover:text-brightColor transition-all cursor-pointer">
           Status
         </Link>
         <Link
@@ -266,8 +252,7 @@ const AgentNavbar = () => {
           spy={true}
           smooth={true}
           duration={500}
-          className=" hover:text-brightColor transition-all cursor-pointer"
-        >
+          className=" hover:text-brightColor transition-all cursor-pointer">
           About
         </Link>
         <Link
@@ -275,8 +260,7 @@ const AgentNavbar = () => {
           spy={true}
           smooth={true}
           duration={500}
-          className=" hover:text-brightColor transition-all cursor-pointer"
-        >
+          className=" hover:text-brightColor transition-all cursor-pointer">
           Contact
         </Link>
 

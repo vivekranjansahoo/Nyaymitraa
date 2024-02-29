@@ -46,8 +46,7 @@ const AdminSidebar = ({ children }) => {
       <div
         className={` ${
           open ? "w-72" : "w-12 "
-        } bg-dark-blue h-screen p-3  pt-8 relative duration-300 `}
-      >
+        } bg-dark-blue h-screen p-3  pt-8 relative duration-300 `}>
         <img
           src={Control}
           className={`absolute cursor-pointer -right-6 top-9 w-7 border-dark-purple
@@ -64,8 +63,7 @@ const AdminSidebar = ({ children }) => {
           <h1
             className={`text-white origin-left font-medium text-xl duration-200 ${
               !open && "scale-0"
-            }`}
-          >
+            }`}>
             Admin Dashboard
           </h1>
         </div>
@@ -74,17 +72,15 @@ const AdminSidebar = ({ children }) => {
             <Link to={`/admindashboard/${Menu.title}Page`}>
               <li
                 key={index}
-                className={`flex  rounded-md p-1 cursor-pointer hover:bg-light-white text-gray-300 text-sm items-center gap-x-4 
+                className={`flex  rounded-md p-1 cursor-pointer hover:bg-light-white text-gray-300 text-sm items-center gap-x-4 font-bold
               ${Menu.gap ? "mt-9" : "mt-2"} ${
                   index === 0 && "bg-light-white"
-                } `}
-              >
+                } `}>
                 {Menu.src}
                 <span
                   className={`${
                     !open && "hidden"
-                  } origin-left duration-200 text-md`}
-                >
+                  } origin-left duration-200 text-md`}>
                   {Menu.title}
                 </span>
               </li>

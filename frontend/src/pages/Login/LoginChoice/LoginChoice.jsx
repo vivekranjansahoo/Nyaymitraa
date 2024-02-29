@@ -14,73 +14,70 @@ const LoginChoice = () => {
             <VStack direction="row" spacing={4}>
               <Link to={"/userlogin"}>
                 <Button
+                  h={12}
                   colorScheme="cyan"
                   variant="solid"
-                  w={"300px"}
-                  rightIcon={<ArrowForwardIcon />}
                   _hover={{ bgGradient: "linear(to-r, #FFD700, #FF8C00)" }}
-                >
-                  Sign In as a User
+                  w={"330px"}
+                  rightIcon={<ArrowForwardIcon />}>
+                  SIGN IN AS A USER
                 </Button>
               </Link>
               <Text
                 bgGradient="linear(to-r, #FF8C00, #FFD700)"
                 backgroundClip="text"
                 fontWeight="bold"
-                fontSize="xl"
-              >
+                fontSize="xl">
                 {" "}
                 Or{" "}
               </Text>
               <Link to={"/lsplogin"}>
                 <Button
+                  h={12}
                   colorScheme="cyan"
                   variant="solid"
                   _hover={{ bgGradient: "linear(to-r, #FFD700, #FF8C00)" }}
-                  w={"300px"}
-                  rightIcon={<ArrowForwardIcon />}
-                >
-                  Sign In as a Legal Service Provider
+                  w={"330px"}
+                  rightIcon={<ArrowForwardIcon />}>
+                  SIGN IN AS A LEGAL SERVICE PROVIDER
                 </Button>
               </Link>
               <Text
                 bgGradient="linear(to-r, #FF8C00, #FFD700)"
                 backgroundClip="text"
                 fontWeight="bold"
-                fontSize="xl"
-              >
+                fontSize="xl">
                 {" "}
                 Or{" "}
               </Text>
               <Link to={"/agentlogin"}>
                 <Button
+                  h={12}
                   colorScheme="cyan"
                   variant="solid"
                   _hover={{ bgGradient: "linear(to-r, #FFD700, #FF8C00)" }}
-                  w={"300px"}
-                  rightIcon={<ArrowForwardIcon />}
-                >
-                  Sign In as Agent
+                  w={"330px"}
+                  rightIcon={<ArrowForwardIcon />}>
+                  SIGN IN AS A AGENT
                 </Button>
               </Link>
               <Text
                 bgGradient="linear(to-r, #FF8C00, #FFD700)"
                 backgroundClip="text"
                 fontWeight="bold"
-                fontSize="xl"
-              >
+                fontSize="xl">
                 {" "}
                 Or{" "}
               </Text>
               <Link to={"/adminlogin"}>
                 <Button
+                  h={12}
                   colorScheme="cyan"
                   variant="solid"
                   _hover={{ bgGradient: "linear(to-r, #FFD700, #FF8C00)" }}
-                  w={"300px"}
-                  rightIcon={<ArrowForwardIcon />}
-                >
-                  Sign In as Admin
+                  w={"330px"}
+                  rightIcon={<ArrowForwardIcon />}>
+                  SIGN IN AS A ADMIN
                 </Button>
               </Link>
             </VStack>

@@ -168,18 +168,15 @@ const VerificationPage_Info = () => {
                   <Tr
                     key={provider.id}
                     cursor="pointer"
-                    onClick={() => handleRowClick(provider)}
-                    bg={
-                      selectedProvider && selectedProvider.id === provider.id
-                        ? "gray.200"
-                        : ""
-                    }
-                  >
+
+                    onClick={() => handleRowClick(provider)}>
+                   
                     <Td>
                       {provider.firstname}
 
                       {provider.lastname}
                     </Td>
+
                     <Td>{provider.email}</Td>
                     <Td>{provider.phoneno}</Td>
                     <Td>1</Td>
@@ -200,22 +197,21 @@ const VerificationPage_Info = () => {
                         {/* <Button
                           colorScheme="teal"
                           size="sm"
-                          onClick={() => handleVerify(provider.id)}
-                        >
+                          onClick={() => handleVerify(provider.id)}>
                           Verify
                         </Button> */}
                         <Button
                           colorScheme="green"
-                          size="sm"
+                          size="s
+                          onClick={() => handleAccept(provider.id)}
                           onClick={() => handleAccept(provider._id)}
-                        >
+                       >
                           Accept
                         </Button>
                         <Button
                           colorScheme="red"
                           size="sm"
-                          onClick={() => handleReject(provider.id)}
-                        >
+                          onClick={() => handleReject(provider.id)}>
                           Reject
                         </Button>
                       </HStack>

@@ -12,7 +12,7 @@ const About = () => {
           "Unlock Justice: Your Trusted Legal Service Partner. Expertise,
           Integrity, and Results – We Stand by Your Side."
         </h1>
-        <p className=" text-[#bdbdbd] pb-5">Nyaymitra</p>
+        <p className=" text-[#bdbdbd] pb-5 font-mono">NYAYMITRA</p>
 
         <Link to="contact" spy={true} smooth={true} duration={500}>
           <Button title="Contact Now" backgroundColor={backgroundColor} />
