@@ -33,8 +33,16 @@ const requireAuth = (req, res, next) => {
 
 module.exports.lspregister = async (req, res, next) => {
   try {
-    const { firstname, lastname, email, role, password, phoneno, fileid } =
-      req.body;
+    const {
+      firstname,
+      lastname,
+      email,
+      role,
+      password,
+      phoneno,
+      fileid,
+      isverified,
+    } = req.body;
     const existingUser = await Lsp.findOne({ email });
 
     if (existingUser) {
@@ -51,12 +59,43 @@ module.exports.lspregister = async (req, res, next) => {
       password,
       phoneno,
       fileid,
+      isverified,
     });
     await newUser.save();
 
     res.status(201).json({ message: "LSP registered successfully" });
   } catch (error) {
     res.status(500).json({ error: "Failed to register" });
+  }
+};
+
+//all lsp details for approved by admin
+
+module.exports.adminlsp = async (req, res) => {
+  try {
+    const data = await Lsp.find().sort({ updatedAt: -1 });
+    if (data) {
+      res.json(data);
+    }
+  } catch (error) {
+    res.status(500).json({ error: "error from the backend" });
+  }
+};
+
+module.exports.adminlspapproved = async (req, res) => {
+  try {
+    const lspid = req.params.lspid;
+    const user = await Lsp.findById(lspid);
+
+    if (!user) {
+      return res.status(404).json({ message: "legalservice not found" });
+    }
+    user.isverified = true;
+    await user.save();
+
+    res.status(200).json({ message: "lsp approved successfully" });
+  } catch (error) {
+    res.json({ error: "error from the backend" });
   }
 };
 

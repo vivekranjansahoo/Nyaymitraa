@@ -14,6 +14,8 @@ const {
   lspdetails,
   getlsp,
   getAllUsers,
+  adminlsp,
+  adminlspapproved,
 } = require("../controllers/LspController");
 
 const router = require("express").Router();
@@ -30,5 +32,7 @@ router.get("/getlsp", getlsp);
 router.post("/setavatar/:id", setAvatar);
 router.get("/logout/:id", logOut);
 router.get("/allusers/:id", getAllUsers);
+router.get("/adminlsp", adminlsp);
+router.post("/adminlspapproved/:lspid", adminlspapproved);
 
 module.exports = router;
