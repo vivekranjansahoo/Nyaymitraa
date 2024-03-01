@@ -152,6 +152,8 @@ export default function LspRegister() {
           password,
           phoneno,
           fileid,
+          idno: idProof,
+          licenseno: licenseProof,
         });
         console.log(response);
         if (response.data.message == "LSP registered successfully") {
@@ -209,7 +211,8 @@ export default function LspRegister() {
               size="sm"
               style={{
                 backgroundColor: isVerified ? "green" : "#4e0eff",
-              }}>
+              }}
+            >
               {isLoading ? (
                 <Spinner size="sm" />
               ) : isVerified ? (
@@ -230,14 +233,16 @@ export default function LspRegister() {
                   <Heading
                     lineHeight={1.1}
                     fontSize={{ base: "2xl", md: "3xl" }}
-                    mt={2}>
+                    mt={2}
+                  >
                     Verify your Email
                   </Heading>
                 </Center>
                 <Center
                   fontSize={{ base: "sm", sm: "md" }}
                   color={useColorModeValue("gray.800", "gray.400")}
-                  mt={3}>
+                  mt={3}
+                >
                   We have sent code to your email & expire in 5 minutes.
                 </Center>
                 <Center
@@ -245,7 +250,8 @@ export default function LspRegister() {
                   fontWeight="bold"
                   color={useColorModeValue("gray.800", "gray.400")}
                   mt={3}
-                  mb={6}>
+                  mb={6}
+                >
                   {email}
                 </Center>
                 <FormControl>
@@ -315,7 +321,8 @@ export default function LspRegister() {
             style={{
               color: "white",
               border: "0.1rem solid #4e0eff",
-            }}>
+            }}
+          >
             <option value="Advocate" style={{ color: "black" }}>
               Advocate
             </option>
