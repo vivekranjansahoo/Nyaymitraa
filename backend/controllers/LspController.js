@@ -41,6 +41,8 @@ module.exports.lspregister = async (req, res, next) => {
       password,
       phoneno,
       fileid,
+      idno,
+      licenseno,
       isverified,
     } = req.body;
     const existingUser = await Lsp.findOne({ email });

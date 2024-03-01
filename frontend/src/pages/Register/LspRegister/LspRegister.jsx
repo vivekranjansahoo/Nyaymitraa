@@ -50,8 +50,8 @@ export default function LspRegister() {
   const [role, setrole] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setconfirmPassword] = useState("");
-  const [idProof, setIdProof] = useState("");
-  const [licenseProof, setLicenseProof] = useState("");
+  const [idno, setidno] = useState("");
+  const [licenseno, setlicenseno] = useState("");
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [pin, setPin] = useState("");
   const [otp, setOtp] = useState("");
@@ -152,8 +152,8 @@ export default function LspRegister() {
           password,
           phoneno,
           fileid,
-          idno: idProof,
-          licenseno: licenseProof,
+          idno,
+          licenseno,
         });
         console.log(response);
         if (response.data.message == "LSP registered successfully") {
@@ -354,7 +354,7 @@ export default function LspRegister() {
             type="number"
             placeholder="Adhaar Number (ID Proof)"
             name="id proof"
-            onChange={(e) => setIdProof(e.target.value)}
+            onChange={(e) => setidno(e.target.value)}
             maxLength={14}
             minLength={14}
           />
@@ -364,7 +364,7 @@ export default function LspRegister() {
             type="text"
             placeholder="License Number"
             name="license Number"
-            onChange={(e) => setLicenseProof(e.target.value)}
+            onChange={(e) => setlicenseno(e.target.value)}
           />
 
           <p style={{ color: "white" }}>Document Proof</p>
