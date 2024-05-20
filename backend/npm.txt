@@ -1,0 +1,1 @@
+npm i bcrypt body-parser cors dotenv express express-session jsonwebtoken mongodb mongoose nodemailer nodemon
