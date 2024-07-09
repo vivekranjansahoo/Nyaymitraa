@@ -1,6 +1,6 @@
-# Techneers
+# Nyaymitra
 
-This is the README file for Techneers.
+<h2>Live Link https://nyaymitra.netlify.app/</h2>
 
 <b>Generative AI Demo</b>
 
