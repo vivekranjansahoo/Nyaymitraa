@@ -31,6 +31,8 @@ This is the README file for Techneers.
 ![My animated logo](Screenshot/28.PNG)
 ![My animated logo](Screenshot/29.PNG)
 ![My animated logo](Screenshot/30.PNG)
+![My animated logo](Screenshot/31.PNG)
+![My animated logo](Screenshot/32.PNG)
 
 <b>Admin Page</b>
 ![My animated logo](Screenshot/11.PNG)
